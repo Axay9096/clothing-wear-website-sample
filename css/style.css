@@ -1,0 +1,562 @@
+/* CSS Reset */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: 'Limelight', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*:root{
+    --navbar-height: 59px;
+}  */
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*#navbar::before{
+    content: "";
+    background-color:lightgray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+}  */
+
+/* logo and Image 
+.logo{
+   margin: 60px;
+  
+   
+} 
+
+/* List styling */
+
+
+
+nav{
+    flex: 1;
+    text-align: right; 
+   
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    overflow: 0;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    display: block;
+
+}
+
+nav ul li a:hover {
+    background-color: #ebdddd;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute; 
+    padding: 0%;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+.dropdown-content li{
+    background-color: white;
+    width: 100%;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+p{
+    color: #555;
+}
+
+/*  #navbar ul li a:hover{
+    color: ;
+    background-color: white;
+
+} */
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-left: 0px;
+    text-align: center;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #FFF;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px ;
+   
+}
+
+.btn:hover{
+    background: #563434; 
+}
+
+.header{
+    background: radial-gradient(#FFF,#ffd6d6);
+    height: 800px;
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.imgcar{
+    
+    padding: 9px 25px;
+    background-color:rgb(105, 141, 240);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s
+}
+.imgcar:hover{
+    background: #916969;
+}
+.categories{
+    margin: 70px 0;
+} 
+/*.col-3{
+  float: left;
+  width: 33.33%;
+  padding: 15px ;
+} */
+
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+} 
+
+.col-3 img{
+
+    width: 100%;
+}
+
+/*.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+
+ 
+
+
+.col-4{
+    flex-width: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}  
+
+.col-4 img{
+    width: 50%;
+    height: auto;
+} */
+
+
+.col-4{
+    flex-basis: 20%;
+    min-width: 250px;
+    margin-bottom: 30px;
+} 
+
+.col-4 img{
+    height: 350px;
+    width: 300px;
+    padding: 0%;
+    margin: 0;
+}
+
+.col-44{
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+} 
+
+.col-44 img{
+    height: 300px;
+    width: 250px;
+    padding: 0%;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    margin: o auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-44 p{
+    font-size: 14px;
+} 
+.rating .fa{
+    color: #ff523b;
+} 
+   /* ---- Offer ------*/
+.offer1{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+ 
+
+.col-2 offer-img{
+   
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+
+.quotes{
+    padding-top: 100px;
+}
+.quotes .col-33{
+   text-align: center;
+   padding: 40px 20px;
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+}
+.quotes .col-33 img{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.quotes .col-33:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+   font-size: 35px;
+   color: #ff523b;
+}
+
+/*----- Footer ------*/ 
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-1, .footer-2, .footer-3, .footer-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+ 
+}
+
+.footer-1{
+    flex-basis: 30%;
+}
+.footer-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-3, .footer-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.logo-phone{
+    margin-top: 20px;
+}
+.logo-phone img{
+    width: 100px;
+    margin: 20px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menubar{
+    width: 27px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------- Media Query for menu --- */
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top:  70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menubar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*---- Men shirt page ----*/
+
+.row-1{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #c71c16;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.next-page{
+    margin: 0 auto 75px;
+}
+.next-page span{
+    display: inline-block;
+    border: 1px solid #cf4e3d;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.next-page span:hover{
+    background: #e66352;
+    color: #fff;
+}
+
+
+/*--- media query for less than 600 screen size ---*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+}
+.cart-details p{
+    display: none ;
+}
+
+}
+
+/* cart items */
+
+.cart1{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #cc22a7;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #cc22a7;
+    font-size: 12px;
+}
+td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.sub-total{
+    display: flex;
+    justify-content: flex-end;
+}
+.sub-total table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 410px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
+/* ---- account page ---- */
+.account-detail{
+    padding: 50% 0;
+    background: radial-gradient(#FFF,#ffd6d6);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 1 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.btn-form{
+    display:inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#SigninForm{
+    left: -300px;
+
+}
+#SignupForm{
+  left: 0;  
+}
+form a{
+    font-size: 12px;
+}
+#Highlighter{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+   

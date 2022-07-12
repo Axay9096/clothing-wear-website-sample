@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta cherset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Stylish clothing websitebof India | FashionStore.com</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+ </head>
+ <body>
+   
+        <div class="container">   
+        <div class="navbar">
+             <div class="logo">
+                 <a href="homepage.html"> <img src="pictures/logotrends.png"  alt="Trends.com"></a>
+              </div> 
+               
+              <nav>
+                <ul> 
+                    <li class="dropdown">MEN</a>
+                        <ul class="dropdown-content">
+                       <li><a href="mensub.html">Formal Wear</a></li>
+                        <li><a href="mencasual.html">Casual Wear</a></li>
+                        </ul>
+                    </li>
+                      <li class="dropdown">WOMEN</a>
+                           <ul class="dropdown-content">
+                           <li><a href="womencat.html">Formal Wear</a></li>
+                           <li><a href="womencasual.html">Casual Wear</a></li>
+                            </ul>
+                    </li>
+                  <li ><a href="">STYLES</a></li>
+                  <li ><a href="">BLOG</a></li>
+                  <li ><a href="login.html">PROFILE</a></li>
+                </ul>
+              </nav>
+          <div class="imgcar"> 
+            <a href="cart.html"><img src="pictures/wishlist.png" width="30px" height="30px">
+         <img src="pictures/menu.png" class="menubar" onclick="menutoggle()">
+          
+        </div>
+      </div>
+    
+    <!-- Account detail page sign in registration -->
+    <div class="account-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="pictures/main2.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="btn-form">
+                            <span onclick="Signin()">Signin</span>
+                            <span onclick="Signup()">Signup</span>
+                            <hr id="Highlighter">
+                        </div>
+
+                        <form id="SigninForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Signin</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="SignupForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Signup</button>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-1">
+            <h3>Get Our App</h3>
+            <p>Download our App for IOS and Android phone.</p>
+            <div class="logo-phone">
+              <img src="pictures/ps.png">
+              <img src="pictures/applestore.png">
+            </div>
+          </div>
+          <div class="footer-2">
+            <h3>Motivation</h3>
+            <p>We are commited to deliver the trendy and affordable clothing line for our customers.</p>
+          
+         </div>
+         <div class="footer-3">
+           <h3 style="margin-top: auto;">External Links</h3>
+           <ul>
+             <li>Fashion Blogs</li>
+             <li>Offer Coupons</li>
+             <li>Return Policy</li>
+             <li>Refund Section</li>
+           </ul>
+         </div>
+         <div class="footer-4">
+           <h3>Keep Updated</h3>
+           <ul>
+             <li>Instagram</li>
+             <li>Twitter</li>
+             <li>Facebook</li>
+             <li>Pinterest</li>
+           </ul>
+         </div>
+        </div>
+        <hr>
+        <p class="copyright">All content here is &copy; 2021 The Trends</p>
+      </div>      
+    </div> 
+
+    <script>
+        var items = document.getElementById("items");
+        items.style.maxHeight = "0px";
+
+        function menutoggle(){
+          if(items.style.maxHeight == "0px")
+          {
+           items.style.maxHeight = "200px";
+          }
+          else
+          {
+           items.style.maxHeight = "0px";
+          }
+        } 
+        </script> 
+
+        <!-- js for toggle form -->
+        <script>
+       
+       var SigninForm = document.getElementById("SigninForm");
+       var SignupForm = document.getElementById("SignupForm");
+       var Highlighter = document.getElementById("Highlighter");
+           
+           function Signup(){
+               SignupForm.style.transform = "translateX(0px)";
+               SigninForm.style.transform = "translateX(0px)";
+               Highlighter.style.transform = "translateX(100px)";
+           }
+
+           function Signin(){
+               SignupForm.style.transform = "translateX(300px)";
+               SigninForm.style.transform = "translateX(300px)";
+               Highlighter.style.transform = "translateX(0px)";
+           }
+
+         </script>   
+
+    </body>
+    </html>
